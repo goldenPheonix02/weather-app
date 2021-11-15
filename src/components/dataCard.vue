@@ -2,9 +2,8 @@
   <div class="container">
     <Input @submitted="OnSubmit" />
     <div class="date">
-        <p class="name">{{ city }}</p>
+      <p class="name">{{ city }}</p>
       <p class="day">{{ date }}</p>
-      
     </div>
     <div class="temp">
       <p>{{ temp }} <sup>o</sup> C</p>
@@ -37,11 +36,12 @@ export default {
   methods: {
     OnSubmit(name) {
       console.log(name);
-      const API_key=keys["key"]
+      const API_key = keys["key"];
       https.get(
         "https://api.openweathermap.org/data/2.5/weather?q=" +
           name +
-          "&units=metric&appid="+API_key,
+          "&units=metric&appid=" +
+          API_key,
         (res) => {
           console.log(res.statusCode);
           let data = "";
@@ -53,15 +53,13 @@ export default {
             // all data has been received, now we can parse it and are done
             var parsedData = JSON.parse(data);
             if (res.statusCode === 404) {
-            alert("City Not Found");
-          } else {
-            this.clouds = parsedData.weather[0].description;
-            this.temp = parsedData.main.temp;
-            this.city = parsedData.name;
-          }
-
+              alert("City Not Found");
+            } else {
+              this.clouds = parsedData.weather[0].description;
+              this.temp = parsedData.main.temp;
+              this.city = parsedData.name;
+            }
           });
-          
         }
       );
     },
@@ -77,12 +75,14 @@ export default {
   margin: 30px auto 18px;
 }
 @media screen {
-  
 }
 .date {
-  margin: 40px 0 0 ;
+  margin: 40px 0 0;
 }
-.name{font-size: 1.5rem; font-weight: 700;}
+.name {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 .day {
   font-size: 2rem;
 }

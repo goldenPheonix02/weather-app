@@ -1,12 +1,12 @@
 <template>
-<router-view></router-view>
+  <router-view></router-view>
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-*{
-    margin:0;
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

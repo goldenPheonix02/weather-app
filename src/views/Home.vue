@@ -1,9 +1,9 @@
 <template>
-<Header/>
+  <Header />
   <div class="home">
-    <DataCard/>
+    <DataCard />
   </div>
-  <Footer/>
+  <Footer />
 </template>
 
 <script>
@@ -20,7 +20,7 @@ export default {
     Header,
     Footer,
     // Input,
-    DataCard
+    DataCard,
   },
 };
 </script>
