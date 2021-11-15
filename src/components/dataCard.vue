@@ -11,7 +11,6 @@
     </div>
     <div class="clouds">
       <p>{{ clouds }}</p>
-      
     </div>
   </div>
 </template>
@@ -19,6 +18,8 @@
 import Input from "@/components/input.vue";
 const https = require("https");
 const keys = require("../assets/API_KEY.json");
+const date = require("../assets/date.js");
+
 export default {
   name: "DataCard",
   components: {
@@ -26,7 +27,7 @@ export default {
   },
   data() {
     return {
-      date: "Thursday, 6 Jan",
+      date: date.getDate(),
       time: "23:45 PM",
       temp: "27",
       city: "",
@@ -73,7 +74,10 @@ export default {
   display: inline-block;
   padding: 1rem 5rem 10rem;
   border-radius: 5px;
-  margin: 30px auto;
+  margin: 30px auto 18px;
+}
+@media screen {
+  
 }
 .date {
   margin: 40px 0 0 ;

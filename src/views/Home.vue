@@ -3,13 +3,14 @@
   <div class="home">
     <DataCard/>
   </div>
+  <Footer/>
 </template>
 
 <script>
 // @ is an alias to /src
-// import HelloWorld from "@/components/HelloWorld.vue";
-import Header from "@/components/header.vue";
 
+import Header from "@/components/header.vue";
+import Footer from "@/components/footer.vue";
 import DataCard from "@/components/dataCard.vue";
 
 export default {
@@ -17,6 +18,7 @@ export default {
   components: {
     // HelloWorld,
     Header,
+    Footer,
     // Input,
     DataCard
   },

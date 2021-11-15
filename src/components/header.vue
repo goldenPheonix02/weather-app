@@ -12,7 +12,6 @@ export default {
 <style scoped>
 
 div{
-    /* box-shadow: 10px 0px 7px #bbb; */
     box-shadow: 0px 1px 10px 2px rgba(0,0,0,0.1);
     text-align: center;
     padding:1.2rem 0;
