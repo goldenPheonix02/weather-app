@@ -2,7 +2,6 @@
     <div>
         <form @submit="submitted">
             <input  v-model="cityName" type="text" placeholder="Enter City name..." required>
-            <!-- <input  v-model="cityName" type="submit"> -->
             <button type="submit">Get Weather Data</button>
         </form>
     </div>
@@ -19,7 +18,7 @@ export default {
         submitted(e){
             e.preventDefault()
             if(!this.cityName){
-                alert("Please add a task!")
+                alert("Please add a City!")
                 return
             }
             else{
