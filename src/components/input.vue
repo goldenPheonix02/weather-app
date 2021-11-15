@@ -36,7 +36,7 @@ export default {
         margin:0px 0 10px; 
     }
     input{
-        width:300px;
+        width:100%;
         font-size: 1rem;
         height:30px;
         display: block;

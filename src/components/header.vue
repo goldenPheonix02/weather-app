@@ -6,7 +6,6 @@
 <script>
 export default {
     name:'Header',
-    
 }
 </script>
 <style scoped>
@@ -17,6 +16,7 @@ div{
     padding:1.2rem 0;
     background: #ccc;
     font-size: 2rem;
+    margin:auto;
 }
 p{
     font-family: 'Poppins', sans-serif;
